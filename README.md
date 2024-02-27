@@ -4,6 +4,7 @@ This code simply requests the recipt of transaction by GET method and download P
 
 Dependencies:
   CURL
+  
  [ pdftotext cli tool](https://www.xpdfreader.com/download.html)https://www.xpdfreader.com/download.html
 
 You can run the compiled file, set the transaction type(either 'c' or 'd') and set the reference n.o to test.
