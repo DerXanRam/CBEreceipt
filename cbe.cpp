@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const string baseurl = "https://apps.cbe.com.et:100/";
+const string baseurl = "http://apps.cbe.com.et:100/";
 static string web_response;
 
 static size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
@@ -22,7 +22,7 @@ int downloader(string tx, string fileN)
     CURL *curl_handle;
 
     FILE *pagefile;
-    string tempURL = "https://apps.cbe.com.et:100/?id=" + tx;
+    string tempURL = "http://apps.cbe.com.et:100/?id=" + tx;
     const char *temp = tempURL.c_str();
     char *url = strdup(temp);
     static const char *pagefilename = fileN.c_str();
